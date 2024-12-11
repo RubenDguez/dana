@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0px;
+    border-bottom: 1px solid lightgray;
+}
+
+.logo {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+}
+
+.brandWrapper {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: start;
+}
+
+.brandName {
+    font-family: "Meow Script";
+    font-size: 3rem;
+}
+
+.slogan {
+    gap: 3rem;
+}
+
+@media (width <= 834px) {
+    .brandWrapper {
+        align-items: center;
+        margin-right: 140px;
+    }
+}
+
+@media (width <=430px) {
+    .nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo {
+        height: 60px;
+        width: 60px;
+    }
+
+    .brandWrapper {
+        align-items: center;
+        padding: 0;
+        margin-right: 0;
+    }
+
+    .brandName {
+        display: flex;
+    }
+
+    .slogan {
+        display: flex;
+        flex-direction: row;
+    }
+}
