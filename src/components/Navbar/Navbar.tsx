@@ -9,7 +9,7 @@ const Navbar = () => {
       <div className={brandWrapper}>
         <h2 className={brandName}>Dana</h2>
         <div className={slogan}>
-          <p><span>Dominican Cakes</span> | <span>Artisanal Pastries</span></p>
+          <p><span>Artisanal Pastries</span></p>
         </div>
       </div>
     </nav>
