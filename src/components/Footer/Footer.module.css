@@ -14,17 +14,32 @@
 
 .brandName {
     font-family: "Meow Script";
+    font-size: 3rem;
 }
 
 .mediaLinks ul {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
 }
 
 .mediaLinks a,
 .mediaLinks li {
     color: gray;
-    font-size: large;
+    font-size: xx-large;
     text-decoration: none;
     list-style: none;
+}
+
+.established {
+    font-size: small;
+}
+
+@media (width <= 834px) {
+    .mediaLinks a,
+    .mediaLinks li {
+        font-size: x-large;
+    }
+    .brandName {
+        font-size: 2rem;
+    }
 }

@@ -1,4 +1,4 @@
-import { Footer, Navbar } from "../../components";
+import { Footer, Home, Navbar } from "../../components";
 
 import classes from './Main.module.css';
 
@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <div className={main}>
     <Navbar />
-    <main></main>
+    <Home />
     <Footer />
     </div>
   )

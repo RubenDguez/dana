@@ -7,13 +7,18 @@ import classes from './Footer.module.css';
 const {
     brandName,
     footer,
-    mediaLinks
+    mediaLinks,
+    established
 } = classes;
+
+const ESTABLISHED_YEAR = 2024;
+const CURRENT_YEAR = new Date().getFullYear();
+const YEARS_ACTIVE = CURRENT_YEAR === ESTABLISHED_YEAR ? ESTABLISHED_YEAR : `${ESTABLISHED_YEAR} - ${CURRENT_YEAR}`;
 
 const Footer = () => {
     return (
         <footer className={footer}>
-            <h3 className={brandName}>Dana Sweets <span style={{ fontFamily: 'Roboto' }}>&reg;</span></h3>
+            <h3 className={brandName}>Dana Sweets <span style={{ fontFamily: 'Roboto', fontSize: '10px' }}>&reg;</span></h3>
             <div className={mediaLinks}>
                 <ul>
                     <li><a href="https://www.instagram.com/danasweets.ct?igsh=QkFKQ3N5dTA2TA%3D%3D" target="_blank"><FaInstagramSquare /></a></li>
@@ -21,7 +26,7 @@ const Footer = () => {
                     <li><a href="#"><FaSquareXTwitter /></a></li>
                 </ul>
             </div>
-            <p>All rights reserved | { new Date().getFullYear().toString() }</p>
+            <p className={established}>All rights reserved | {} <span>{YEARS_ACTIVE}</span></p>
         </footer>
     )
 }
