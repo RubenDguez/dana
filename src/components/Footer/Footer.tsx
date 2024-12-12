@@ -16,7 +16,7 @@ const Footer = () => {
             <h3 className={brandName}>Dana Sweets <span style={{ fontFamily: 'Roboto' }}>&reg;</span></h3>
             <div className={mediaLinks}>
                 <ul>
-                    <li><a href="#"><FaInstagramSquare /></a></li>
+                    <li><a href="https://www.instagram.com/danasweets.ct?igsh=QkFKQ3N5dTA2TA%3D%3D" target="_blank"><FaInstagramSquare /></a></li>
                     <li><a href="#"><FaFacebookSquare /></a></li>
                     <li><a href="#"><FaSquareXTwitter /></a></li>
                 </ul>
