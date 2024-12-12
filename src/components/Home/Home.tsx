@@ -6,7 +6,8 @@ const {
 
 const Home = () => {
     return (
-        <main className={main}></main>
+        <main className={main}>
+        </main>
     )
 }
 
