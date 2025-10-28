@@ -1,0 +1,33 @@
+.notFound {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: tomato;
+}
+
+.notFound h1 {
+    border-right: 2px solid tomato;
+    padding-right: 1rem;
+    margin-right: 1rem;
+    font-size: 8rem;
+    font-weight: 200;
+}
+
+.backHome {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+}
+
+.backHome a {
+    font-weight: bold;
+}
+
+.backHome .scalable {
+    transition: all ease-in-out 0.3s;
+}
+
+.backHome .scalable:hover {
+    rotate: -20deg;
+}

@@ -5,10 +5,11 @@ const {
 } = classes;
 
 const Home = () => {
-    return (
-        <main className={main}>
-        </main>
-    )
-}
+  return (
+    <main className={main}>
+        <img src="" alt="pastel" width={100} />
+    </main>
+  );
+};
 
 export default Home;

@@ -1,21 +1,18 @@
-import { Footer, Home, Navbar } from "../../components";
+import { Outlet } from 'react-router-dom';
+import { Footer, Navbar } from '../../components';
 
 import classes from './Main.module.css';
 
-const {
-    main
-} = classes;
+const { main } = classes;
 
 const Main = () => {
-
-
   return (
     <div className={main}>
-    <Navbar />
-    <Home />
-    <Footer />
+      <Navbar />
+      <Outlet />
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
 export default Main;

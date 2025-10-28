@@ -1,45 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 .footer {
-    display: flex;
-    gap: 0.5rem;
-    padding: 1rem 0px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     background-color: black;
-    color: gray;
+    color: white;
+    border-radius: 8px 8px 0 0;
+    text-align: center;
 }
 
-.brandName {
-    font-family: "Meow Script";
-    font-size: 3rem;
-}
-
-.mediaLinks ul {
+.footerCols {
     display: flex;
-    gap: 3rem;
 }
 
-.mediaLinks a,
-.mediaLinks li {
-    color: gray;
-    font-size: xx-large;
-    text-decoration: none;
-    list-style: none;
+.brand {
+    border-bottom: 1px solid white;
+    padding: 1rem;
 }
 
-.established {
+.brand h1,
+.brand h2,
+.brand h3,
+.brand h4,
+.brand h5,
+.brand h6 {
+    font-family: "Meow Script", cursive;
+}
+
+.brand h1 span,
+.brand h2 span,
+.brand h3 span,
+.brand h4 span,
+.brand h5 span,
+.brand h6 span {
+    font-family: "Roboto", sans-serif;
     font-size: small;
+    position: relative;
+    top: -5px;
+    left: -5px;
 }
 
-@media (width <= 834px) {
-    .mediaLinks a,
-    .mediaLinks li {
-        font-size: x-large;
-    }
-    .brandName {
-        font-size: 2rem;
-    }
+.brand p {
+    font-size: x-small;
+}
+
+.followContactUs {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: x-small;
+    flex-direction: column;
+    gap: 1rem;
+    width: 50%;
+    border-right: 1px solid white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.followLinks {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    font-size: x-large;
 }

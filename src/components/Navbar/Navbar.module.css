@@ -1,64 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Meow+Script&display=swap');
 
 .nav {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0px;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3rem 0px;
 }
 
-.logo {
-    height: 140px;
-    width: 140px;
-    border-radius: 50%;
+.logo img {
+  width: 100px;
+  height: 100px;
 }
 
-.brandWrapper {
-    display: flex;
+.brand {
+    padding-left: 3rem;
     flex-grow: 1;
-    flex-direction: column;
-    align-items: start;
 }
 
-.brandName {
-    font-family: "Meow Script";
-    font-size: 3rem;
+.brand h1 {
+    font-family: "Meow Script", cursive;
+    font-size: 5rem;
 }
 
-.slogan {
-    gap: 3rem;
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.active {
+  color: lightgray;
 }
 
 @media (width <= 834px) {
-    .brandWrapper {
-        align-items: center;
-        margin-right: 140px;
-    }
+  .logo img {
+    width: 160px;
+    height: 160px;
+  }
 }
 
 @media (width <=430px) {
-    .nav {
-        flex-direction: column;
-        align-items: center;
-    }
-    .logo {
-        height: 60px;
-        width: 60px;
-    }
-
-    .brandWrapper {
-        align-items: center;
-        padding: 0;
-        margin-right: 0;
-    }
-
-    .brandName {
-        display: flex;
-    }
-
-    .slogan {
-        display: flex;
-        flex-direction: row;
-    }
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
 }

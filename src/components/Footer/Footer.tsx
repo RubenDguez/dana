@@ -1,34 +1,43 @@
-import { FaInstagramSquare } from "react-icons/fa";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaInstagramSquare, FaFacebookSquare, FaTwitterSquare } from 'react-icons/fa';
 
 import classes from './Footer.module.css';
 
-const {
-    brandName,
-    footer,
-    mediaLinks,
-    established
-} = classes;
-
-const ESTABLISHED_YEAR = 2024;
-const CURRENT_YEAR = new Date().getFullYear();
-const YEARS_ACTIVE = CURRENT_YEAR === ESTABLISHED_YEAR ? ESTABLISHED_YEAR : `${ESTABLISHED_YEAR} - ${CURRENT_YEAR}`;
+const { footer, footerCols, brand, followContactUs, followLinks } = classes;
 
 const Footer = () => {
-    return (
-        <footer className={footer}>
-            <h3 className={brandName}>Dana Sweets <span style={{ fontFamily: 'Roboto', fontSize: '10px' }}>&reg;</span></h3>
-            <div className={mediaLinks}>
-                <ul>
-                    <li><a href="https://www.instagram.com/danasweets.ct?igsh=QkFKQ3N5dTA2TA%3D%3D" target="_blank"><FaInstagramSquare /></a></li>
-                    <li><a href="#"><FaFacebookSquare /></a></li>
-                    <li><a href="#"><FaSquareXTwitter /></a></li>
-                </ul>
-            </div>
-            <p className={established}>All rights reserved | {} <span>{YEARS_ACTIVE}</span></p>
-        </footer>
-    )
-}
+  return (
+    <footer className={footer}>
+      <div className={brand}>
+        <h2>
+          <span>&copy;</span>Dana Sweets
+        </h2>
+        <p>All Rights Reserved | 2024 - {new Date().getFullYear().toString()}</p>
+      </div>
+      <div className={footerCols}>
+        <div className={followContactUs}>
+          <p>Follow us:</p>
+          <div className={followLinks}>
+            <a href="https://www.instagram.com/danasweets.ct">
+              <FaInstagramSquare />
+            </a>
+            <a href="https://www.instagram.com/danasweets.ct">
+              <FaFacebookSquare />
+            </a>
+            <a href="https://www.instagram.com/danasweets.ct">
+              <FaTwitterSquare />
+            </a>
+          </div>
+        </div>
+        <div className={followContactUs}>
+          <p>Contact us:</p>
+          <div>
+            <p><span>Tel:</span> 407-456-4567</p>
+            <p><span>Email:</span> <a href="mailto:dana.sweets@gmail.com">dana.sweets@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
 
 export default Footer;
